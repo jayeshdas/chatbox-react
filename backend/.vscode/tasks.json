@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Backend Server",
+			"type": "shell",
+			"command": "npm install && node server.js",
+			"args": [],
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

@@ -28,8 +28,8 @@ npm start
 
 You should see:
 ```
-✓ Server running on http://localhost:5000
-✓ Socket.IO listening on http://localhost:5000
+✓ Server running on http://127.0.0.1:5000
+✓ Socket.IO listening on http://127.0.0.1:5000
 ```
 
 ### Step 3: Start Frontend (in new terminal)
@@ -39,18 +39,18 @@ cd frontend
 npm start
 ```
 
-The app will automatically open at **http://localhost:3000**
+The app will automatically open at **http://127.0.0.1:3000**
 
 ## 🎯 Test the Application
 
 ### Option A: Same Computer (2 Browser Tabs)
 
-1. **Tab 1** (http://localhost:3000):
+1. **Tab 1** (http://127.0.0.1:3000):
    - Click "Register"
    - Create User A (username: `a`, password: `password`)
    - Click "Login"
 
-2. **Tab 2** (http://localhost:3000):
+2. **Tab 2** (http://127.0.0.1:3000):
    - Create User B (username: `b`, password: `password`)
    - Click "Login"
 
@@ -86,7 +86,7 @@ const PORT = process.env.PORT || 5000;  // Change 5000 to your port
 ### Frontend Port
 Edit `frontend/package.json`:
 ```json
-"proxy": "http://localhost:5000"  // Change if backend port changed
+"proxy": "http://127.0.0.1:5000"  // Change if backend port changed
 ```
 
 Also update component files to use correct backend URL.

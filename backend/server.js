@@ -264,7 +264,8 @@ app.get('*', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => {
-  console.log(`\n✓ Server running on http://localhost:${PORT}`);
-  console.log(`✓ Socket.IO listening on http://localhost:${PORT}\n`);
+const HOST = process.env.HOST || '0.0.0.0';
+server.listen(PORT, HOST, () => {
+  console.log(`\n✓ Server running on http://${HOST}:${PORT}`);
+  console.log(`✓ Socket.IO listening on http://${HOST}:${PORT}\n`);
 });

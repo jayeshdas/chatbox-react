@@ -58,7 +58,7 @@ const Dashboard = ({ user, onLogout }) => {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/users?exclude=${user.id}`
+        `/api/users?exclude=${user.id}`
       );
       setUsers(response.data);
     } catch (err) {
@@ -77,7 +77,7 @@ const Dashboard = ({ user, onLogout }) => {
     
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/messages?userId1=${user.id}&userId2=${selectedUser.id}`
+        `/api/messages?userId1=${user.id}&userId2=${selectedUser.id}`
       );
       setMessages(response.data);
     } catch (err) {
@@ -119,7 +119,7 @@ const Dashboard = ({ user, onLogout }) => {
     }
 
     try {
-      const response = await axios.delete('http://localhost:5000/api/messages', {
+      const response = await axios.delete('/api/messages', {
         data: {
           userId1: user.id,
           userId2: selectedUser.id

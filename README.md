@@ -37,6 +37,7 @@ npm start
 ```
 
 Server will run on: **http://localhost:5000**
+Server will run on: **http://127.0.0.1:5000**
 
 ### Frontend Setup
 
@@ -46,7 +47,7 @@ npm install
 npm start
 ```
 
-App will open at: **http://localhost:3000**
+App will open at: **http://127.0.0.1:3000**
 
 ## 🎯 Features
 
@@ -149,7 +150,7 @@ npm start
 ```
 
 ### Test the App
-1. Open http://localhost:3000
+1. Open http://127.0.0.1:3000
 2. Register User A
 3. Open another tab, Register User B
 4. Send messages between users
@@ -228,7 +229,7 @@ CREATE TABLE messages (
 ### Socket.IO connection fails
 - Ensure backend is running on port 5000
 - Check CORS settings in `server.js`
-- Verify frontend URL is http://localhost:3000
+- Verify frontend URL is http://127.0.0.1:3000
 
 ### Messages not appearing
 - Check browser console for errors

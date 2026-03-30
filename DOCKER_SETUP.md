@@ -22,7 +22,7 @@ docker-compose logs -f
 docker-compose down
 ```
 
-The application will be available at **http://localhost:5000**
+The application will be available at **http://127.0.0.1:5000**
 
 ### Option 2: Using Docker CLI
 
@@ -66,8 +66,8 @@ environment:
 ## Accessing the Application
 
 Once running, access the application at:
-- **Frontend**: http://localhost:5000
-- **API**: http://localhost:5000/api
+- **Frontend**: http://127.0.0.1:5000
+- **API**: http://127.0.0.1:5000/api
 
 ## Data Persistence
 
